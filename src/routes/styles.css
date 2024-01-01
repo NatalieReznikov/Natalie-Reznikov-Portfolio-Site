@@ -61,10 +61,10 @@ body {
 	height: 100vh;
 	margin: 0;
 	background-attachment: fixed;
-	background-color: var(--main-color);
-	background-image: url("./background_tile.webp");
-	background-repeat: repeat;
-	background-size: 15%;
+	/* background-color: var(--main-color); */
+	/* background-image: url("./background_tile.webp"); */
+	/* background-repeat: repeat; */
+	/* background-size: 15%; */
 }
 
 .no-webp body {
