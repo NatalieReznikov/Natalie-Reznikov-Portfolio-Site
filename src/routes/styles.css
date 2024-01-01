@@ -67,6 +67,10 @@ body {
 	background-size: 15%;
 }
 
+.no-webp body {
+	background-image: url("./background_tile.png");
+}
+
 h1,
 h2,
 p {

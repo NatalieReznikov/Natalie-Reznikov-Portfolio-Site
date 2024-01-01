@@ -12,7 +12,7 @@
     </div>
 
     <div id="jacobCredit">
-        <h3>Jacob Reznikov - Web Developlment, Web Design</h3>
+        <h3>Jacob Reznikov - Web Development, Web Design</h3>
         <h5> 
             Github:
             <a href="https://github.com/axiomofchoices">https://github.com/axiomofchoices</a>

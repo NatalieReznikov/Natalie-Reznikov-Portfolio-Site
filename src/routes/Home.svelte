@@ -1,12 +1,17 @@
 <script lang="ts">
-    import homepage_picture from "$lib/images/natalie picture.webp";
+    import homepage_picture from "$lib/images/nataliepicture.webp";
+    import homepage_picture_png from "$lib/images/nataliepicture.png";
 </script>
 
 <div id="Home">
     
     <div class="background-container"> 
         <div class="title">Natal<span class="i">i</span>e Rezn<span class="i">i</span>kov</div>
-        <img src={homepage_picture} alt="Natalie Reznikov, smiling."> 
+        <picture > 
+            <source srcset={homepage_picture_png} type="image/png">
+            <source src={homepage_picture} type="image/webp">
+            <img src={homepage_picture} alt="Natalie Reznikov, smiling.">
+        </picture>
     </div>
     
 </div>

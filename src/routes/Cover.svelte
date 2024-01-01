@@ -1,5 +1,6 @@
 <script lang="ts">
-    export let url: string;
+    export let cover: string;
+    export let cover_mac: string;
     export let alt: string;
     export let description: string;
 
@@ -7,7 +8,11 @@
 </script>
 
 <div class="cover">
-    <img src={url} alt={alt}>
+    <picture>
+        <source srcset={cover_mac} type="image/png">
+        <source srcset={cover} type="image/webp">
+        <img src={cover} alt={alt}>
+    </picture>
     <div class="description">
         <div class="indicator">{@html up_chevron}</div>
         {@html description}
@@ -16,7 +21,6 @@
 
 <style>
     img {
-        object-fit: contain;
         width: 100%;
     }
 
@@ -44,7 +48,7 @@
         transform: translateY(100%);
         border-radius: 5px 5px 0 0;
         transition-duration: .3s;
-        background-image: linear-gradient(to bottom, color-mix(in srgb, var(--main-color) 70%, transparent), var(--main-color) 21px);
+        background-image: linear-gradient(to bottom, #282c34ad, var(--main-color) 21px);
     }
 
     .description:hover{
