@@ -7,6 +7,7 @@
     import journalSBC2 from "$lib/images/coverart/JSB_regular_cover_107598.webp";
     import StreaksColor from "$lib/images/coverart/1-s2.0-S1047847722000156-main.webp";
     import CoverBoneEnthesis from "$lib/images/coverart/CoverBoneEnthesis.webp";
+    import CoverBoneAugust from "$lib/images/coverart/BonecoverAugust2024.webp";
 
     import footBoneCover_Mac from "$lib/images/coverart/jbmr.2961.png";
     import vortexCover_Mac from "$lib/images/coverart/jbmr.3764.png";
@@ -16,6 +17,7 @@
     import journalSBC2_Mac from "$lib/images/coverart/JSB_regular_cover_107598.png";
     import StreaksColor_Mac from "$lib/images/coverart/1-s2.0-S1047847722000156-main.png";
     import CoverBoneEnthesis_Mac from "$lib/images/coverart/CoverBoneEnthesis.png";
+    import CoverBoneAugust_Mac from "$lib/images/coverart/BonecoverAugust2024.png";
 
     import Cover from "./Cover.svelte";
 
@@ -73,7 +75,14 @@
             id: 7,
             cover: CoverBoneEnthesis,
             cover_mac: CoverBoneEnthesis_Mac,
-            description : "<div>Bone mineral crystallites. Scanning transmission electron tomography, 3D segmentation followed by watershed transform.</em></div>",
+            description : "<div>3D Multiscale imaging of Enthesis</div>",
+            alt: ""
+        },
+        {
+            id: 8,
+            cover: CoverBoneAugust,
+            cover_mac: CoverBoneAugust_Mac,
+            description: "<div>Quantitative 3D analysis of bone resorption events</div>",
             alt: ""
         }
     ];

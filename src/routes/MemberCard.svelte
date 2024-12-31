@@ -65,18 +65,23 @@
         grid-area: a;
         width: calc(calc(94vw - 40px)/2.54);
         width: calc(100cqw/2.54);
+        gap: 0.4em;
     }
     .content {
         grid-area: b;
         font-size: 0.45em;
         position: relative;
         height: 100%;
+        display: grid;
+        grid-template: "a" auto
+                      "b" 1fr / 1fr;
+
+        
     }
     .blerb {
         padding: 0em 0.5em 0em 0em;
 
         overflow-y: auto;
-        height: calc(100% - 3em);
     }
     .researchphoto {
         grid-area: c;

@@ -23,6 +23,12 @@
   import hubert_photo from "$lib/images/members/Hubert/Hubert_photo.webp";
   import hubert_research_photo from "$lib/images/members/Hubert/Hubert_image.webp";
 
+  import vinay_photo from "$lib/images/members/Vinay/Vinay_photo.webp";
+  import vinay_research_photo from "$lib/images/members/Vinay/Vinay_image.webp";
+
+  import alexandre_photo from "$lib/images/members/Alexandre/Alexandre_photo.webp";
+  import alexandre_research_photo from "$lib/images/members/Alexandre/Alexandre_image.webp";
+
   import benjamin_photo_mac from "$lib/images/members/Benjamin/benjamin_photo.png";
   import benjamin_research_photo_mac from "$lib/images/members/Benjamin/benjamin_image.png";
 
@@ -47,9 +53,36 @@
   import hubert_photo_mac from "$lib/images/members/Hubert/Hubert_photo.png";
   import hubert_research_photo_mac from "$lib/images/members/Hubert/Hubert_image.png";
 
+  import vinay_photo_mac from "$lib/images/members/Vinay/Vinay_photo.png";
+  import vinay_research_photo_mac from "$lib/images/members/Vinay/Vinay_image.png";
+
+  import alexandre_photo_mac from "$lib/images/members/Alexandre/Alexandre_photo.png";
+  import alexandre_research_photo_mac from "$lib/images/members/Alexandre/Alexandre_image.png";
+
+
   import MemberCard from "./MemberCard.svelte";
 
   let members = [
+    {
+      name: "Vinay Ashok Kumar",
+      blerb:
+        "The intricate interplay between craniofacial biomechanics and muscle dysfunction drives my research. With a background in dentistry and surgical expertise, I focus on the debilitating effects of temporomandibular disorders (TMDs) on the jaw, facial muscles, and dentition. My current work at the Reznikov lab explores a non-invasive treatment for bruxism and TMD using an innovative oscillating device designed by Prof. Reznikov and team to modulate muscle tone and alleviate pain. By integrating principles from biomechanics and clinical practice, I aim to advance therapeutic interventions that enhance patient quality of life.",
+      photo: vinay_photo,
+      research_photo: vinay_research_photo,
+      photo_mac: vinay_photo_mac,
+      research_photo_mac: vinay_research_photo_mac,
+      order: -1,
+    },
+    {
+      name: "Alexandre Demers-Potvin",
+      blerb:
+        "I am a new postdoctoral researcher in the Reznikov Lab with a background in paleontology following the completion of a Master’s and of a PhD in Prof. Hans Larsson’s lab in McGill University’s Department of Biology. After spending much of my PhD making 3D reconstructions of animal skeletons through surface scanning and of entire fossil-rich rock outcrops through photogrammetry, I will direct my attention towards the segmentation of several CT scans of biological and archeological specimens from McGill museum collections. My ultimate objective is to display those segmented and annotated scans within a virtual reality museum that I will design as part of this project.",
+      photo: alexandre_photo,
+      research_photo: alexandre_research_photo,
+      photo_mac: alexandre_photo_mac,
+      research_photo_mac: alexandre_research_photo_mac,
+      order: 7,
+    },
     {
       name: "Benjamin Rudski",
       blerb:
@@ -120,6 +153,9 @@
       research_photo_mac: arnaud_research_photo_mac,
       order: 0,
     },
+  ];
+
+  let alumni = [
     {
       name: "Hubert Taïeb",
       blerb:
@@ -128,11 +164,14 @@
       research_photo: hubert_research_photo,
       photo_mac: hubert_photo_mac,
       research_photo_mac: hubert_research_photo_mac,
-      order: 7,
+      order: 0,
     },
   ];
 
   members.sort((a, b) => {
+    return a.order - b.order;
+  });
+  alumni.sort((a, b) => {
     return a.order - b.order;
   });
 </script>
@@ -140,6 +179,21 @@
 <div id="Lab">
   <div id="CardList">
     {#each members as member}
+      <MemberCard
+        name={member.name}
+        blerb={member.blerb}
+        photo={member.photo}
+        research_photo={member.research_photo}
+        photo_mac={member.photo_mac}
+        research_photo_mac={member.research_photo_mac}
+      />
+    {/each}
+    <div class="Break">
+
+    <h2>Alumni</h2>
+    <hr>
+    </div>
+    {#each alumni as member}
       <MemberCard
         name={member.name}
         blerb={member.blerb}
@@ -167,6 +221,15 @@
 
     grid-template-rows: repeat(auto-fill, 1fr);
     row-gap: 2em;
+  }
+
+  h2 {
+    font-size: 3em;
+    margin: 0em;
+  }
+
+  hr {
+    width: 100%;
   }
 </style>
 

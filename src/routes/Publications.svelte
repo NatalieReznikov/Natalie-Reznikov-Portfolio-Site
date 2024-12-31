@@ -1,6 +1,54 @@
 <script lang="ts">
     let pubs = [
         {
+          id: 38,
+          authors: "Buss DJ, Deering J, Reznikov N, McKee MD",
+          title: "Understanding the structural biology of osteomalacia through multiscale 3D X-ray and electron tomographic imaging:  A review of X-linked hypophosphatemia, the Hyp mouse model, and imaging methods",
+          prelink:"J Bone Miner Res Plus, 2024, special issue on rare bone diseases, in press",
+          link:"",
+          postlink:"",
+        },
+        {
+          id: 37,
+          authors: "Reznikov N",
+          title: "Editorial [for paper of the year 2022] for Buss et al., “Hierarchical organization of bone in three dimensions; a twist of twists”",
+          prelink:"J Struct Biol: X, 2024(10):100116 ",
+          link:"http://doi.org/10.1016/j.yjsbx.2024.100116 ",
+          postlink:"",
+        },
+        {
+          id: 36,
+          authors: "Reznikov N",
+          title: "The Stenciling Principle for extracellular matrix mineralization.  Textbook Sub-Chapter in: Ten Cate's Oral Histology: Development, Structure, and Function (10th edition)",
+          prelink:"Author/Editor Antonio Nanci.  Elsevier.  ISBN-13 978-0323798952 ",
+          link:"https://shop.elsevier.com/books/ten-cates-oral-histology/nanci/978-0-323-79895-2#full-description",
+          postlink:"",
+        },
+        {
+          id: 35,
+          authors: "Halgrain M, Schneider MA, Jia S, Narcy A, Gambier E, Hincke MT, McKee MD, Rehault-Godbert S, Reznikov N",
+          title: "A 3D micro-computed tomography study comparing embryonic skeletal development in layer versus broiler strains of the domestic chicken",
+          prelink:"Poultry Science, 2024, 103(12):104308 ",
+          link:"http://doi.org/10.1016/j.psj.2024.104308 ",
+          postlink:"",
+        },
+        {
+          id: 34,
+          authors: "Rodriguez-Navarro AB, Dominguez-Gasca N, Athanasiadou D, Le Roy N, Reznikov N, Gonzalez-Segura A, Hincke MT, McKee MD, Nys Y, Gautron J",
+          title: "Guinea fowl eggshell structural analysis at different scales reveals how organic matrix induces microstructural shifts that enhance its mechanical properties",
+          prelink:"Acta Biomater, 2024, 178:244-256",
+          link:"http://doi.org/10.1016/j.actbio.2024.03.001 ",
+          postlink:"",
+        },
+        {
+          id: 33,
+          authors: "Grass D, Malek G, Taieb H, Ittah E, Richard H, Reznikov N, Laverty S",
+          title: "Characterization and quantification of in-vitro equine bone resorption in 3D using microcomputed tomography (µCT) and deep learning-aided feature segmentation",
+          prelink:"Bone, 2024, 185:117131",
+          link:"https://doi.org/10.1016/j.bone.2024.117131 ",
+          postlink:"",
+        },
+        {
           id: 32,
           authors: "Daniel J Buss, Natalie Reznikov, Marc D McKee",
           title: "Attaching organic fibers to mineral: The case of the avian eggshell",
@@ -85,6 +133,7 @@
           authors: "Reznikov N, Rechav K.",
           title:"FIB-SEM dual-beam microscopy for three-dimensional ultrastructural imaging of skeletal tissues. Methodological insert in Comparative skeletal histology and paleohistology. Editors : A. de Ricqlès, L. Zylberberg, K. Padian and V. de Buffrénil",
           prelink:"CRC Press (Francis and Taylor Group) (invited book chapter, in press).",
+          link:"",
           postlink:"",
         },
         {
