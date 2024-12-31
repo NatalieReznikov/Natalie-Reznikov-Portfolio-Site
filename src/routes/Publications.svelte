@@ -5,7 +5,7 @@
           authors: "Buss DJ, Deering J, Reznikov N, McKee MD",
           title: "Understanding the structural biology of osteomalacia through multiscale 3D X-ray and electron tomographic imaging:  A review of X-linked hypophosphatemia, the Hyp mouse model, and imaging methods",
           prelink:"J Bone Miner Res Plus, 2024, special issue on rare bone diseases, in press",
-          link:"",
+          link:"https://doi.org/10.1093/jbmrpl/ziae176 ",
           postlink:"",
         },
         {

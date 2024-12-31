@@ -4,8 +4,7 @@
 npm run build
 
 # navigate into the build output directory
-cp -r build/* dist
-cd dist
+cd build
 
 # if you are deploying to a custom domain
 'nataliereznikov.com' | save CNAME -f
@@ -24,7 +23,7 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f https://github.com:/NatalieReznikov/Natalie-Reznikov-Portfolio-Site.git master:master
+git push -f git@github.com:NatalieReznikov/Natalie-Reznikov-Portfolio-Site.git master:master
 
 cd -
 
