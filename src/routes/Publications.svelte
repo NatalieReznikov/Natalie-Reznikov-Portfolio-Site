@@ -1,6 +1,46 @@
 <script lang="ts">
     let pubs = [
         {
+          id: 43,
+          authors: "Nelea V, Ittah E, McKee MD, Reznikov N.",
+          title: "Bone mineral tessellation: Visualization by atomic force microscopy of the volume-filling mineralization pattern in hydrated and dehydrated states.",
+          prelink: "Acta Biomaterialia. 2025",
+          link: "https://doi.org/10.1016/j.actbio.2025.05.016.",
+          postlink: "",
+        },
+        {
+          id: 42,
+          authors: "Khurshid B, Benchetrite A, Guichaoua L, Brodusch N, Stewart BD, Kröger R, Gauvin R, Mallet M, Tremblay R, Reznikov N",
+          title: "Investigating temperature influences on shell growth and microstructural variations in Bay scallops: Insights from multiscale microscopy",
+          prelink: "Faraday Discussions 2025",
+          link: "https://doi.org/10.1039/D5FD00023H",
+          postlink: "(in press)",
+        },
+        {
+          id: 41,
+          authors: "Guichaoua L, Reznikov N, Stewart BD, Kröger R, Gauvin R",
+          title: "Combined crystallographic study of king scallop (Pecten maximus) shells using SEM, EBSD and Raman spectroscopy",
+          prelink: "Faraday Discussions 2025",
+          link: "https://doi.org/10.1039/D5FD00029G",
+          postlink: "(in press)",
+        },
+        {
+          id: 40,
+          authors: "Deering J, Buss DJ, Kröger R, Vali H, Lagos MJ, Reznikov N, McKee MD",
+          title: "Bone mineralization and the effects of elevated osteopontin: From symmetry-breaking foci to 3D space-filling tessellation",
+          prelink: "Faraday Discussions 2025",
+          link: "https://doi.org/10.1039/D5FD00013K",
+          postlink: "(in press)",
+        },
+        {
+          id: 39,
+          authors: "Buss DJ, Deering J, Reznikov N, McKee MD",
+          title: "Understanding the structural biology of osteomalacia through multiscale 3D X-ray and electron tomographic imaging:  A review of X-linked hypophosphatemia, the Hyp mouse model, and imaging methods.",
+          prelink: "J Bone Miner Res Plus, 2025 (special issue on rare bone diseases), 9(2): ziae176. ",
+          link: "https://doi.org/10.1093/jbmrpl/ziae176",
+          postlink: "(Cover article)",
+        },
+        {
           id: 38,
           authors: "Buss DJ, Deering J, Reznikov N, McKee MD",
           title: "Understanding the structural biology of osteomalacia through multiscale 3D X-ray and electron tomographic imaging:  A review of X-linked hypophosphatemia, the Hyp mouse model, and imaging methods",
