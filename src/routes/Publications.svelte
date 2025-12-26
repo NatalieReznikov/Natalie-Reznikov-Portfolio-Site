@@ -1,6 +1,47 @@
 <script lang="ts">
     let pubs = [
         {
+  id: 48,
+  authors: "Khurshid B, Mousa A, Dallas SL, Deering J, Reznikov N, McKee MD.",
+  title: "Trabecular bone formation in vitro by the OmGFP66 osteogenic cell line.",
+  prelink: "Bone, ",
+  link: "https://doi.org/10.1016/j.bone.2025.117767.",
+  postlink: ""
+},
+{
+  id: 47,
+  authors: "Bromage TG, Denys C, De Jesus CL, Erdjument-Bromage H, Kullmer Schrenk F, McKee MD, Reznikov N, Ittah E, Buss DJ, Ashley GM, Sandrock O, Pudel SB, Yakar S, Hu B, Rabieh S, Neubert TA.",
+  title: "Fossil mammalian bone paleometabolomes yield metabolic and ecologic profiles.",
+  prelink: "Nature. ",
+  link: "https://doi.org/10.1038/s41586-025-09843-w.",
+  postlink: ""
+},
+        {
+  id: 46,
+  authors: "Deering J, Buss DJ, Murshed M, Reznikov N, McKee MD.",
+  title: "Local fibril orientation guides mineral growth direction and morphology in collagenous matrices: A study of parallelism in bone, cartilage, enthesis fibrocartilage, calcifying tendon and dentin.",
+  prelink: "ACS Nano, ",
+  link: "https://doi.org/10.1021/acsnano.5c11922.",
+  postlink: ""
+},
+
+        {
+          id: 45,
+          authors: "Jia S, Piché N, McKee MD, Reznikov N.",
+          title: "Advancing X-ray micro-computed tomography image processing of avian eggshells: An improved registration metric for multiscale 3D images and resolution-enhanced segmentation using edge-attentive neural networks.",
+          prelink: "Micron. 199:103915.",
+          link: "https://doi.org/10.1016/j.micron.2025.103915",
+          postlink: "",
+        },
+        {
+          id: 44,
+          authors: "Rudski BZ, Deering J, Reznikov N.",
+          title: "The Anisotropy Vector Rose: A new package for analysing and visualising 3D non-unit vectors in Python.",
+          prelink: "J Open Source Software, 2025, 10(111):8369",
+          link: "https://doi.org/10.21105/joss.08369",
+          postlink: "",
+        },
+        {
           id: 43,
           authors: "Nelea V, Ittah E, McKee MD, Reznikov N.",
           title: "Bone mineral tessellation: Visualization by atomic force microscopy of the volume-filling mineralization pattern in hydrated and dehydrated states.",
@@ -39,14 +80,6 @@
           prelink: "J Bone Miner Res Plus, 2025 (special issue on rare bone diseases), 9(2): ziae176. ",
           link: "https://doi.org/10.1093/jbmrpl/ziae176",
           postlink: "(Cover article)",
-        },
-        {
-          id: 38,
-          authors: "Buss DJ, Deering J, Reznikov N, McKee MD",
-          title: "Understanding the structural biology of osteomalacia through multiscale 3D X-ray and electron tomographic imaging:  A review of X-linked hypophosphatemia, the Hyp mouse model, and imaging methods",
-          prelink:"J Bone Miner Res Plus, 2024, special issue on rare bone diseases, in press",
-          link:"https://doi.org/10.1093/jbmrpl/ziae176 ",
-          postlink:"",
         },
         {
           id: 37,

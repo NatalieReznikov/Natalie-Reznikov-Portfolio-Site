@@ -2,7 +2,7 @@
     <div id="natalieInfo">
         <h1>Natalie Reznikov</h1>
         <h5> 
-            Teaching office: McConnell Engineering Building
+            Teaching office: Strathcona Anatomy & Dentistry
             <br>
             Research lab: 141 du Président-Kennedy Avenue, 5th floor 
             <br>

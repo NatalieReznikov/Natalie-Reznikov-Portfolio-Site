@@ -8,6 +8,7 @@
     import StreaksColor from "$lib/images/coverart/1-s2.0-S1047847722000156-main.webp";
     import CoverBoneEnthesis from "$lib/images/coverart/CoverBoneEnthesis.webp";
     import CoverBoneAugust from "$lib/images/coverart/BonecoverAugust2024.webp";
+    import CoverJMBR from "$lib/images/coverart/m_cover.webp";
 
     import footBoneCover_Mac from "$lib/images/coverart/jbmr.2961.png";
     import vortexCover_Mac from "$lib/images/coverart/jbmr.3764.png";
@@ -18,6 +19,7 @@
     import StreaksColor_Mac from "$lib/images/coverart/1-s2.0-S1047847722000156-main.png";
     import CoverBoneEnthesis_Mac from "$lib/images/coverart/CoverBoneEnthesis.png";
     import CoverBoneAugust_Mac from "$lib/images/coverart/BonecoverAugust2024.png";
+    import CoverJMBR_Mac from "$lib/images/coverart/m_cover.png";
 
     import Cover from "./Cover.svelte";
 
@@ -83,6 +85,13 @@
             cover: CoverBoneAugust,
             cover_mac: CoverBoneAugust_Mac,
             description: "<div>Quantitative 3D analysis of bone resorption events</div>",
+            alt: ""
+        },
+{
+            id: 9,
+            cover: CoverJMBR,
+            cover_mac: CoverJMBR_Mac,
+            description: "<div>Microscale 3D reconstruction of bone mineral patterning at the microscale in the osteomalacic Hyp mouse, a frequently used animal model for the rare bone and tooth disease X-linked hypophosphatemia. The image shows a small volume of bone in the region of the mineralization front as obtained from focused ion beam - scanning electron microscopy (FIB-SEM) tomography. After software segmentation of individual, micrometer-sized packets of bone mineral that are called tesselles and which normally pack closely to one another in a pattern called crossfibrillar mineral tessellation, in the osteomalacic Hyp mice there is a delay and incompleteness in the space-filling tessellation. This defective patterning of mineral is associated with soft bone and bone deformities.</div>",
             alt: ""
         }
     ];
