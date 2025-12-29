@@ -14,7 +14,7 @@ mkdir .github/
 mkdir .github/workflows
 cp ../workflow.yml .github/workflows/
 
-git init
+git init 
 git add -A
 git commit -m 'deploy'
 

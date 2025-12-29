@@ -71,6 +71,7 @@
 			{#each pages as page_heading}
 				<li aria-current={page_value===page_heading.id ? 'page' : undefined}>
 					<a href={page_heading.ref} on:click={() => page.update((_)  => page_heading.id)}> 
+            <svg style="display:none"/>
 						{#if width > 910}
 						{page_heading.text}
 						{:else}
@@ -120,7 +121,6 @@
 		justify-content: center;
 		height: max-content;
 	}
-
 	
 
 	svg {
@@ -130,6 +130,12 @@
 		scale: calc(4/3.0);
 		display: block;
 	}
+  li a {
+    stroke-width: 2px;
+  }
+  li a :global(.w-2) {
+      stroke-width: 4px;
+    }
 
 	/* li img {
 		color: var(--text-color);
