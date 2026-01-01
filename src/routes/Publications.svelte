@@ -55,7 +55,7 @@
           title: "Investigating temperature influences on shell growth and microstructural variations in Bay scallops: Insights from multiscale microscopy",
           prelink: "Faraday Discussions 2025",
           link: "https://doi.org/10.1039/D5FD00023H",
-          postlink: "(in press)",
+          postlink: "",
         },
         {
           id: 41,
@@ -63,7 +63,7 @@
           title: "Combined crystallographic study of king scallop (Pecten maximus) shells using SEM, EBSD and Raman spectroscopy",
           prelink: "Faraday Discussions 2025",
           link: "https://doi.org/10.1039/D5FD00029G",
-          postlink: "(in press)",
+          postlink: "",
         },
         {
           id: 40,
@@ -71,7 +71,7 @@
           title: "Bone mineralization and the effects of elevated osteopontin: From symmetry-breaking foci to 3D space-filling tessellation",
           prelink: "Faraday Discussions 2025",
           link: "https://doi.org/10.1039/D5FD00013K",
-          postlink: "(in press)",
+          postlink: "",
         },
         {
           id: 39,
