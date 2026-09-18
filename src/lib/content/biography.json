@@ -1,0 +1,62 @@
+[
+  {
+    "id": "position-2020-0",
+    "from": 2020,
+    "to": null,
+    "institution": "McGill University, Montreal, QC, Canada",
+    "roleHtml": "Assistant Professor",
+    "descriptionHtml": "<em> I study structure-function relationships in living organisms (animals and plants), structural water and its role in the architecture and behavior of natural and artificial materials, biomineralization, and novel approaches to 3D imaging and image analysis.  </em>",
+    "image": "occupations/mcgill_modified.png",
+    "imageAlt": "McGill University Logo"
+  },
+  {
+    "id": "position-2018-1",
+    "from": 2018,
+    "to": 2020,
+    "institution": "Object Research Systems Inc., Montreal, QC, Canada",
+    "roleHtml": "Applications Specialist",
+    "descriptionHtml": "<em> I designed, assessed and validated novel modules for 3D image analysis for Dragonfly software. I also produced tutorials and educational videos, provided hands-on and online training, troubleshooting and technical support for academic users. </em>",
+    "image": "occupations/df logo.png",
+    "imageAlt": "Object Research Systems Logo"
+  },
+  {
+    "id": "position-2017-2",
+    "from": 2017,
+    "to": 2018,
+    "institution": "McGill University, Montreal, QC, Canada",
+    "roleHtml": "Postdoctoral Research Fellow, Faculty of Dentistry",
+    "descriptionHtml": "<em> My project aimed at detecting topological differences of the trabecular bone network in pathological bone samples and comparison of the findings with those of normal trabecular bone to assess skeletal adaptation. This work was based on my original algorithm called Inter-Trabecular Angle analysis. My secondary project was 3D analysis of craniofacial deformations in the rare inherited disease Osteogenesis Imperfecta. </em>",
+    "image": "occupations/mcgill_modified.png",
+    "imageAlt": "McGill University Logo"
+  },
+  {
+    "id": "position-2014-3",
+    "from": 2014,
+    "to": 2017,
+    "institution": "Imperial College London, London, UK",
+    "roleHtml": "Postdoctoral Research Fellow, <br> Dept. of Materials, Faculty of Engineering",
+    "descriptionHtml": "<em> I developed a biomimetic 3D-printed prosthetic material for repair of large defects of trabecular bone. That novel material mimics bone’s natural shock-absorbing properties as normally found in our joints and vertebrae. Other projects included: Functional adaptation of the human foot bones; Multiscale characterization of heterotopic bone; 3D imaging and analysis of the collagen-mineral interface in bone; 3D characterization of bioglass-bone interface; 3D imaging and quantification of DNA-origami drug carriers.</em>",
+    "image": "occupations/icl.png",
+    "imageAlt": "Imperial College London Logo"
+  },
+  {
+    "id": "position-2010-4",
+    "from": 2010,
+    "to": 2014,
+    "institution": "Weizmann Institute of Science, Rehovot, Israel.",
+    "roleHtml": "PhD, Dept. of Structural Biology",
+    "descriptionHtml": "Thesis title: The adaptation of mechanical properties of lamellar bone tissue <br> <em> I studied the 3D organization of bone collagen – the framework principally responsible for toughness – using volumetric imaging obtained from dual-beam microscopy (FIB-SEM), and the topology of trabecular bone tissue imaged by µCT.</em>",
+    "image": "occupations/Weizmann-Institute-of-Science_logo_modified.png",
+    "imageAlt": "Weizmann Institute of Science Logo"
+  },
+  {
+    "id": "position-2006-5",
+    "from": 2006,
+    "to": 2008,
+    "institution": "Hebrew University of Jerusalem, Jerusalem, Israel.",
+    "roleHtml": "MSc, Dept. of Orthodontics, Faculty of Dentistry",
+    "descriptionHtml": "Thesis title:  Frictional properties of various types of orthodontic brackets <br> <em> This work focused on the mechanics of fixed orthodontic appliances and their surface characterization in simulated pseudo-clinical situations. </em>",
+    "image": "occupations/hebrew u.png",
+    "imageAlt": "Hebrew University of Jerusalem Logo"
+  }
+]

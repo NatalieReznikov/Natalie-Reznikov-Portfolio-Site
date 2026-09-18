@@ -1,0 +1,102 @@
+[
+  {
+    "id": "vinay-ashok-kumar",
+    "name": "Vinay Ashok Kumar",
+    "bio": "The intricate interplay between craniofacial biomechanics and muscle dysfunction drives my research. With a background in dentistry and surgical expertise, I focus on the debilitating effects of temporomandibular disorders (TMDs) on the jaw, facial muscles, and dentition. My current work at the Reznikov lab explores a non-invasive treatment for bruxism and TMD using an innovative oscillating device designed by Prof. Reznikov and team to modulate muscle tone and alleviate pain. By integrating principles from biomechanics and clinical practice, I aim to advance therapeutic interventions that enhance patient quality of life.",
+    "status": "current",
+    "order": -1,
+    "photo": "members/Vinay/Vinay_photo.png",
+    "researchImage": "members/Vinay/Vinay_image.png",
+    "researchAlt": "Research imagery from Vinay Ashok Kumar"
+  },
+  {
+    "id": "eran-ittah",
+    "name": "Eran Ittah",
+    "bio": "Water is crucial for protein structure and, by extension, life itself. Its role extends beyond cellular-level functions, influencing how animals adapt through evolutionary changes in connective tissues like skin, scales, bone, and corneas. My research focuses on understanding the complex chemistry and physics governing hydrated interfaces in animal connective tissues, aiming to design materials for practical applications by leveraging similar interactions.",
+    "status": "current",
+    "order": 2,
+    "photo": "members/Eran/eran_photo.png",
+    "researchImage": "members/Eran/eran_image.png",
+    "researchAlt": "Research imagery from Eran Ittah"
+  },
+  {
+    "id": "shumeng-jia",
+    "name": "Shumeng Jia",
+    "bio": "I used to be an electrical and control system engineer before joining this group, but now I'm working as a “cyber archeologist” with my coding skills. My research focuses on the quality optimization on both resolution scale and volume scale of 3D computed tomography images using deep learning tools. We scan avian eggs from natural history museum collections and from breeders, as well as ancient Egyptian animal mummies from the World Cultures collection of the Redpath Museum, McGill.",
+    "status": "current",
+    "order": 3,
+    "photo": "members/Shumeng/shumeng_photo.png",
+    "researchImage": "members/Shumeng/shumeng_image.png",
+    "researchAlt": "Research imagery from Shumeng Jia"
+  },
+  {
+    "id": "benjamin-rudski",
+    "name": "Benjamin Rudski",
+    "bio": "I am a PhD candidate in the Quantitative Life Sciences (QLS) program. My research centres on quantitatively understanding functional adaptation in bone using trabecular anisotropy. I seek to understand the relationship between physiologic loading and bone architecture.",
+    "status": "current",
+    "order": 4,
+    "photo": "members/Benjamin/benjamin_photo.png",
+    "researchImage": "members/Benjamin/benjamin_image.png",
+    "researchAlt": "Research imagery from Benjamin Rudski"
+  },
+  {
+    "id": "mahdi-hosseinitabatabaei",
+    "name": "Mahdi Hosseinitabatabaei",
+    "bio": "Having received training as a mechanical engineer, my research focus has evolved over the years to center around enhancing the reliability—specifically precision and accuracy—of computed tomography (CT) imaging through the application of diverse image processing techniques. Leveraging advancements in deep learning, the aim of my postdoctoral research is to solve the dilemma of choosing between resolution and field-of-view in dental cone beam CT imaging such that a large volume with rich structural context can be achieved without sacrificing the image resolution.",
+    "status": "current",
+    "order": 6,
+    "photo": "members/Mahdi/Mahdi_photo.png",
+    "researchImage": "members/Mahdi/Mahdi_image.png",
+    "researchAlt": "Research imagery from Mahdi Hosseinitabatabaei"
+  },
+  {
+    "id": "alexandre-demers-potvin",
+    "name": "Alexandre Demers-Potvin",
+    "bio": "I am a new postdoctoral researcher in the Reznikov Lab with a background in paleontology following the completion of a Master’s and of a PhD in Prof. Hans Larsson’s lab in McGill University’s Department of Biology. After spending much of my PhD making 3D reconstructions of animal skeletons through surface scanning and of entire fossil-rich rock outcrops through photogrammetry, I will direct my attention towards the segmentation of several CT scans of biological and archeological specimens from McGill museum collections. My ultimate objective is to display those segmented and annotated scans within a virtual reality museum that I will design as part of this project.",
+    "status": "current",
+    "order": 7,
+    "photo": "members/Alexandre/Alexandre_photo.png",
+    "researchImage": "members/Alexandre/Alexandre_image.png",
+    "researchAlt": "Research imagery from Alexandre Demers-Potvin"
+  },
+  {
+    "id": "benazir-khurshid",
+    "name": "Benazir Khurshid",
+    "bio": "I am Benazir, a marine biologist from Université de Bourgogne and Synchrotron-Soleil. My research journey unfolded by unveiling the complex structure of a mollusc shell and red corals, employing a different microscopic techniques and biochemical analyses. As a postdoctoral fellow, I worked on understanding the effect of water temperature and pollution on the structure of bay scallop shells.",
+    "status": "alumni",
+    "order": -3,
+    "photo": "members/Benazir/Benazir_photo.png",
+    "researchImage": "members/Benazir/Benazir_image.png",
+    "researchAlt": "Research imagery from Benazir Khurshid"
+  },
+  {
+    "id": "loveni-hanumunthadu",
+    "name": "Lovéni Hanumunthadu",
+    "bio": "I am Lovéni, a former master's student in the Biological and Biomedical Engineering program at McGill. I had been in Natalie’s research group since my undergraduate studies, working on unveiling essential features for the intriguing mechanical properties of 3D tessellations in the bone hierarchical structure. My research project focused on parametric modelling, additive manufacturing and finite element analysis.",
+    "status": "alumni",
+    "order": -2,
+    "photo": "members/Loveni/loveni_photo.png",
+    "researchImage": "members/Loveni/loveni_image.png",
+    "researchAlt": "Research imagery from Lovéni Hanumunthadu"
+  },
+  {
+    "id": "arnaud-benchetrite",
+    "name": "Arnaud Benchetrite",
+    "bio": "I admire nature and how its structures and processes at one scale resonate across different scales, just like how tiny coral bits become vast sand beaches! I am Arnaud, a former undergraduate bioengineering student from Guadeloupe. I worked in Natalie’s lab for multiple projects including imaging of mollusk shells using scanning electron microscopy, training of a deep learning image segmentation models, design of laboratory experiments, review and classification of undergraduate students’ essays, and as a course assistant!",
+    "status": "alumni",
+    "order": -1,
+    "photo": "members/Arnaud/Arnaud_photo.png",
+    "researchImage": "members/Arnaud/Arnaud_image.png",
+    "researchAlt": "Research imagery from Arnaud Benchetrite"
+  },
+  {
+    "id": "hubert-taieb",
+    "name": "Hubert Taïeb",
+    "bio": "Coming from Marseille, France, I obtained a PhD at the Max Planck Institute of Colloids and Interfaces and the Technical University of Berlin, Germany. With my background in image acquisition and image processing, I then went on to a Mitacs postdoctoral position between the Reznikov Lab and Comet Technologies Canada, Inc. (creators of the Dragonfly software), where I built pretrained universal deep learning neural networks for segmentation of 3D images of bone and teeth. I am passionate about food, from eating it to scanning it with µCT.",
+    "status": "alumni",
+    "order": 0,
+    "photo": "members/Hubert/Hubert_photo.png",
+    "researchImage": "members/Hubert/Hubert_image.png",
+    "researchAlt": "Research imagery from Hubert Taïeb"
+  }
+]
