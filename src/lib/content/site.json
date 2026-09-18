@@ -1,0 +1,19 @@
+{
+  "name": "Natalie Reznikov",
+  "tagline": "An engineer trapped inside the body of a biologist",
+  "description": "Natalie Reznikov’s research, publications, cover art, and lab at McGill University.",
+  "url": "https://nataliereznikov.com",
+  "portrait": "nataliepicture.png",
+  "portraitAlt": "Natalie Reznikov, smiling.",
+  "contact": {
+    "teachingOffice": "Strathcona Anatomy & Dentistry",
+    "researchLab": "141 du Président-Kennedy Avenue, 5th floor",
+    "email": "natalie.reznikov@mcgill.ca"
+  },
+  "credit": {
+    "name": "Jacob Reznikov",
+    "role": "Web Development, Web Design",
+    "github": "https://github.com/axiomofchoices",
+    "email": "yakov.reznikov@mail.mcgill.ca"
+  }
+}
