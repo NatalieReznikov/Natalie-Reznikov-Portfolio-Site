@@ -7,7 +7,7 @@
     "order": 1,
     "photo": "members/Emma/emma_photo.png",
     "researchImage": "members/Emma/emma_image.png",
-    "researchAlt": "Research imagery from Emma Warner",
+    "researchAlt": "3D reconstruction of an ibis skeleton from Emma Warner's research"
   },
   {
     "id": "patrick-brian-bielawski",
@@ -17,7 +17,7 @@
     "order": 1,
     "photo": "members/Patrick/patrick_photo.png",
     "researchImage": "members/Patrick/patrick_image.png",
-    "researchAlt": "Research imagery from Patrick-Brian Bielawski",
+    "researchAlt": "Polarized-light micrograph of clustered spherules from Patrick-Brian Bielawski's research"
   },
   {
     "id": "vinay-ashok-kumar",
