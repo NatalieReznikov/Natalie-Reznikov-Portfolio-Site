@@ -1,9 +1,29 @@
 [
   {
+    "id": "emma-warner",
+    "name": "Emma Warner",
+    "bio": "I am an undergraduate in Bioengineering focused on using image processing and deep learning-aided segmentation to create detailed and beautiful 3D reconstructions that facilitate the analysis of biological structures. This work has included renderings of collagen in some craniofacial tissues and examining aspects of avian embryonic development related to calcium traffic. Currently, I am digitally \"unwrapping\" two ancient Egyptian ibis mummies from the Redpath Museum's World Cultures collection to explore their contents and histories.",
+    "status": "current",
+    "order": 1,
+    "photo": "members/Emma/emma_photo.png",
+    "researchImage": "members/Emma/emma_image.png",
+    "researchAlt": "3D reconstruction of an ibis skeleton from Emma Warner's research"
+  },
+  {
+    "id": "patrick-brian-bielawski",
+    "name": "Patrick-Brian Bielawski",
+    "bio": "I am a PhD student in the first cohort of McGill’s Biophysics program – which seeks to incorporate various scientific disciplines such as physics, chemistry, engineering, and biomedicine. After completing a Masters in Pharmacology investigating nanoparticles for drug delivery, I am now focused on uncovering more ‘nanoparticles.’ Specifically, my research attempts to uncover the structure of transient calcium-rich spherules which form in incubating avian eggs, crucial in the formation of bones. I will employ a variety of imaging techniques ranging from scanning electron microscopy, focused-ion beam milling, computed tomography, and ptychography among others.",
+    "status": "current",
+    "order": 1,
+    "photo": "members/Patrick/patrick_photo.png",
+    "researchImage": "members/Patrick/patrick_image.png",
+    "researchAlt": "Polarized-light micrograph of clustered spherules from Patrick-Brian Bielawski's research"
+  },
+  {
     "id": "vinay-ashok-kumar",
     "name": "Vinay Ashok Kumar",
-    "bio": "The intricate interplay between craniofacial biomechanics and muscle dysfunction drives my research. With a background in dentistry and surgical expertise, I focus on the debilitating effects of temporomandibular disorders (TMDs) on the jaw, facial muscles, and dentition. My current work at the Reznikov lab explores a non-invasive treatment for bruxism and TMD using an innovative oscillating device designed by Prof. Reznikov and team to modulate muscle tone and alleviate pain. By integrating principles from biomechanics and clinical practice, I aim to advance therapeutic interventions that enhance patient quality of life.",
-    "status": "current",
+    "bio": "With my background in dentistry and surgical expertise, I focused on the effects of jaw muscle tone on the jaw and neck posture, and dentition. My work explored a non-invasive treatment for bruxism using an oscillating device designed by Prof. Reznikov and team to modulate muscle tone. Driven by integrating principles from biomechanics and clinical practice, I electromyography to study the effect of vibration on the muscle tone.",
+    "status": "alumni",
     "order": -1,
     "photo": "members/Vinay/Vinay_photo.png",
     "researchImage": "members/Vinay/Vinay_image.png",

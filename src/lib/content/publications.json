@@ -1,5 +1,25 @@
 [
   {
+    "id": "publication-50",
+    "authors": "Rudski BZ, Deering J, McKee MD, Reznikov N.",
+    "title": "Statistical analyses of feature orientation in 3D reticulate biological assemblies.",
+    "year": 2026,
+    "citation": "Materials Today Advances, 31:100869.",
+    "doi": "10.1016/j.mtadv.2026.100869",
+    "status": "published",
+    "notes": ""
+  },
+  {
+    "id": "publication-49",
+    "authors": "Hosseinitabatabaei S, Nelson A, Piché N, Dagdeviren D, Reznikov N.",
+    "title": "Craniofacial CBCT: Addressing Volume-Resolution Dilemma using Generative AI.",
+    "year": 2026,
+    "citation": "Bone, 207:117841.",
+    "doi": "10.1016/j.bone.2026.117841",
+    "status": "published",
+    "notes": ""
+  },
+  {
     "id": "publication-48",
     "authors": "Khurshid B, Mousa A, Dallas SL, Deering J, Reznikov N, McKee MD.",
     "title": "Trabecular bone formation in vitro by the OmGFP66 osteogenic cell line.",
