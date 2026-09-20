@@ -15,7 +15,8 @@
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
     "validate:content": "node scripts/validate-content.ts",
     "import:publication": "node scripts/import-publication.mjs",
-    "test": "node --test tests/content.test.ts",
+    "import:image": "node scripts/import-image.mjs",
+    "test": "node --test tests/*.test.ts tests/*.test.mjs",
     "test:e2e": "playwright test"
   },
   "devDependencies": {
@@ -25,6 +26,7 @@
     "@sveltejs/kit": "^2.70.3",
     "@sveltejs/vite-plugin-svelte": "^7.3.0",
     "@types/node": "^24.0.0",
+    "sharp": "^0.35.4",
     "svelte": "^5.57.0",
     "svelte-check": "^4.7.6",
     "typescript": "~6.0.3",

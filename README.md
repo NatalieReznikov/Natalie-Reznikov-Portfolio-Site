@@ -71,7 +71,8 @@ not intended for unreviewed public input. Do not embed scripts or event handlers
 
 ## Replacing images
 
-1. Place one PNG or JPEG in `src/lib/assets/` (or replace an existing image).
+1. Place one PNG or JPEG in `src/lib/assets/`, or import a supplied image with the
+   command below.
 2. Reference its path relative to that folder in the content record, for example
    `members/Vinay/Vinay_photo.png`.
 3. Include a useful image description in `researchAlt`, `alt`, or `imageAlt`.
@@ -81,6 +82,38 @@ The build generates AVIF, WebP, and fallback images with responsive widths and
 intrinsic dimensions. No manual `_mac` version, WebP export, or import statement
 is needed. Small career logos get their own smaller output sizes. Keep a source
 large enough for its intended display; generated images are never upscaled.
+
+### Importing PNGs, TIFFs, and photographs
+
+```sh
+npm run import:image -- "tmp/Emma Warner headshot.png" members/Emma/emma_photo.png
+npm run import:image -- "tmp/polarized2.tif" members/Patrick/patrick_image.png
+```
+
+The importer accepts PNG, TIFF (`.tif`/`.tiff`), JPEG, and WebP, including uppercase
+extensions. It creates the destination folders inside `src/lib/assets/`, applies
+camera orientation, converts colours to sRGB, removes embedded metadata, and
+writes a compressed PNG without cropping or resizing. Transparency is retained.
+The PNG is a website source, not a scientific-data archive: it uses 8-bit sRGB;
+keep the original TIFF for its original bit depth and metadata. Supplied originals
+are left in place. No system image-conversion tools are needed after `npm ci`.
+
+The destination must end in lowercase `.png` and is relative to `src/lib/assets/`.
+Use `--force` to replace an existing asset. Multipage TIFFs require `--page N`
+(starting at 1) so pages are never silently discarded. Run
+`npm run import:image -- --help` for usage. Update the content path and alternative
+text, run `npm run validate:content`, then preview and commit the PNG with the content.
+`npm run dev` and `npm run build` automatically generate its responsive formats.
+
+### Images supplied in documents
+
+Extract document images manually, then pass the extracted files to `import:image`.
+For a Word `.docx`, open it as a ZIP archive and take the original images from
+`word/media/` (for example, `unzip "document.docx" 'word/media/*' -d extracted`).
+Inspect the images before assigning them; embedded numbering does not identify
+portraits versus research images, and document crops are not applied to originals.
+
+Document extraction is separate from the automated raster importer.
 
 Layered artwork and previous exports are preserved in `artwork/legacy/`, outside
 the app's asset pipeline. Editing an XCF there requires exporting a PNG/JPEG to

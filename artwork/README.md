@@ -11,3 +11,21 @@ Changing an XCF alone does not change the website.
 
 Keep new editable artwork here, and use Git history for previous versions of the
 canonical website images instead of making additional `_backup` exports.
+
+## September 2026 image sources
+
+Original supplied files are retained in `tmp/`. Website PNGs were prepared with
+`npm run import:image`; see the main README for conversion and document extraction.
+
+| Supplied source | Website asset under `src/lib/assets/` |
+| --- | --- |
+| `tmp/Emma Warner headshot.png` | `members/Emma/emma_photo.png` |
+| `tmp/Emma Warner thumbnail.png` | `members/Emma/emma_image.png` |
+| `tmp/20260831 - Website Blurb with Photo - PBBielawski.docx`, `word/media/image1.jpeg` | `members/Patrick/patrick_photo.png` |
+| Same Word document, `word/media/image2.jpeg` | `members/Patrick/patrick_photo_alternate.png` |
+| `tmp/polarized2.tif` | `members/Patrick/patrick_image.png` |
+
+The Word document contains two portraits. The first is used on Patrick's card;
+the second is available as an alternate. Both were extracted directly from the
+document archive, retaining their original dimensions. The separate polarized
+micrograph is used as Patrick's research image.
