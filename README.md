@@ -83,20 +83,41 @@ intrinsic dimensions. No manual `_mac` version, WebP export, or import statement
 is needed. Small career logos get their own smaller output sizes. Keep a source
 large enough for its intended display; generated images are never upscaled.
 
+All lab portraits are displayed at the original 606:933 aspect ratio. Prepare a
+close-up with the portrait importer below, aiming for the face to occupy about
+one-third of the picture. The member card preserves that framing and shows solid bars
+above and below shorter photos.
+
 ### Importing PNGs, TIFFs, and photographs
 
 ```sh
-npm run import:image -- "tmp/Emma Warner headshot.png" members/Emma/emma_photo.png
+npm run import:image -- "tmp/Emma Warner headshot.png" members/Emma/emma_photo.png --portrait --crop 140,0,688,1059
 npm run import:image -- "tmp/polarized2.tif" members/Patrick/patrick_image.png
 ```
 
 The importer accepts PNG, TIFF (`.tif`/`.tiff`), JPEG, and WebP, including uppercase
 extensions. It creates the destination folders inside `src/lib/assets/`, applies
 camera orientation, converts colours to sRGB, removes embedded metadata, and
-writes a compressed PNG without cropping or resizing. Transparency is retained.
+writes a compressed PNG without cropping or resizing by default. Transparency is
+retained.
 The PNG is a website source, not a scientific-data archive: it uses 8-bit sRGB;
 keep the original TIFF for its original bit depth and metadata. Supplied originals
 are left in place. No system image-conversion tools are needed after `npm ci`.
+
+For a lab portrait, add `--portrait` and optionally `--crop left,top,width,height`.
+Crop coordinates refer to pixels in the original image after camera orientation
+is applied. Choose a close-up with the face occupying about one-third of the final frame;
+the importer does not detect faces automatically. For example, Emma's framing is:
+
+```sh
+npm run import:image -- "tmp/Emma Warner headshot.png" members/Emma/emma_photo.png --portrait --crop 140,0,688,1059 --force
+```
+
+Portrait mode keeps the selected crop's width and sets its height to the 606:933
+ratio. If the crop is too short, it adds equal dark bars on top and bottom (within
+one pixel), as on Hubert's portrait. If it is too tall, it trims the excess equally
+at the top and bottom. It never stretches or upscales the pixels. Keep supplied
+originals for reframing; only the website PNG receives the crop and padding.
 
 The destination must end in lowercase `.png` and is relative to `src/lib/assets/`.
 Use `--force` to replace an existing asset. Multipage TIFFs require `--page N`

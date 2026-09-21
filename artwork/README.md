@@ -27,5 +27,14 @@ Original supplied files are retained in `tmp/`. Website PNGs were prepared with
 
 The Word document contains two portraits. The first is used on Patrick's card;
 the second is available as an alternate. Both were extracted directly from the
-document archive, retaining their original dimensions. The separate polarized
-micrograph is used as Patrick's research image.
+document archive. The separate polarized micrograph is used as Patrick's research
+image.
+
+Emma and Patrick's website portraits use close-ups prepared with
+`import:image --portrait --crop`. Coordinates below are `left,top,width,height` in the oriented
+original, before the importer adds any padding to reach the 606:933 ratio:
+
+- Emma: `140,0,688,1059` from the supplied headshot.
+- Patrick: `155,20,880,1355` from the Word document's `word/media/image1.jpeg`.
+
+The supplied originals and Patrick's alternate retain their original dimensions.
