@@ -83,3 +83,65 @@ test('rejects unsupported formats, invalid destinations, and invalid page number
     await assert.rejects(importImage(source, 'photo.png', { root, page }), /positive integer/);
   }
 });
+
+test('portrait mode pads a short crop above and below without changing its pixels', async (t) => {
+  const { source, root } = await workspace(t);
+  await sharp({ create: { width: 100, height: 90, channels: 3, background: 'red' } })
+    .composite([{ input: { create: { width: 80, height: 60, channels: 3, background: 'blue' } }, left: 10, top: 10 }])
+    .png().toFile(source);
+  const original = await readFile(source);
+  await importImage(source, 'portrait.png', {
+    root, portrait: true, crop: { left: 10, top: 10, width: 80, height: 60 }
+  });
+  const output = sharp(join(root, 'portrait.png'));
+  const { data, info } = await output.removeAlpha().raw().toBuffer({ resolveWithObject: true });
+  assert.deepEqual([info.width, info.height], [80, 123]);
+  for (let y = 0; y < 123; y++) {
+    const expected = y >= 31 && y < 91 ? [0, 0, 255] : [34, 37, 38];
+    for (let x = 0; x < 80; x++) {
+      const offset = (y * 80 + x) * 3;
+      assert.deepEqual([...data.subarray(offset, offset + 3)], expected);
+    }
+  }
+  assert.deepEqual(await readFile(source), original);
+});
+
+test('portrait mode trims tall images to the original ratio without resampling', async (t) => {
+  const { source, root } = await workspace(t);
+  const pixels = Buffer.alloc(100 * 200 * 3);
+  for (let y = 0; y < 200; y++) {
+    for (let x = 0; x < 100; x++) {
+      pixels.set([x, y, 127], (y * 100 + x) * 3);
+    }
+  }
+  await sharp(pixels, { raw: { width: 100, height: 200, channels: 3 } }).png().toFile(source);
+  await importImage(source, 'portrait.png', { root, portrait: true });
+  const { data, info } = await sharp(join(root, 'portrait.png')).raw().toBuffer({ resolveWithObject: true });
+  assert.deepEqual([info.width, info.height], [100, 154]);
+  assert.deepEqual(data, pixels.subarray(23 * 100 * 3, 177 * 100 * 3));
+});
+
+test('portrait crop coordinates apply after camera orientation', async (t) => {
+  const { source, root } = await workspace(t);
+  await sharp({ create: { width: 120, height: 80, channels: 3, background: 'red' } })
+    .withMetadata({ orientation: 6 }).tiff({ compression: 'lzw' }).toFile(source);
+  await importImage(source, 'portrait.png', {
+    root, portrait: true, crop: { left: 10, top: 70, width: 60, height: 40 }
+  });
+  const metadata = await sharp(join(root, 'portrait.png')).metadata();
+  assert.deepEqual([metadata.width, metadata.height, metadata.orientation], [60, 92, undefined]);
+});
+
+test('invalid portrait crops cannot overwrite existing assets', async (t) => {
+  const { source, root } = await workspace(t);
+  await sharp({ create: { width: 80, height: 90, channels: 3, background: 'red' } }).png().toFile(source);
+  await importImage(source, 'portrait.png', { root });
+  const previous = await readFile(join(root, 'portrait.png'));
+  const crop = { left: 10, top: 10, width: 60, height: 60 };
+  await assert.rejects(importImage(source, 'portrait.png', { root, force: true, crop }), /requires --portrait/);
+  for (const invalid of [null, { ...crop, left: -1 }, { ...crop, width: 0 }, { ...crop, top: 0.5 },
+    { ...crop, left: 30 }, { ...crop, top: 40 }]) {
+    await assert.rejects(importImage(source, 'portrait.png', { root, force: true, portrait: true, crop: invalid }), /--crop/);
+    assert.deepEqual(await readFile(join(root, 'portrait.png')), previous);
+  }
+});
