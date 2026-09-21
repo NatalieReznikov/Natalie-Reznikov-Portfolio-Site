@@ -7,8 +7,9 @@
 <h1 class="visually-hidden">Bio</h1>
 <ol class="timeline">
   {#each biography as position (position.id)}
+    {@const duration = (position.to ?? currentYear) - position.from}
     <li>
-      <div class="dates"><p>{position.from}<br />–<br />{position.to ?? 'Present Time'}<br /><em>{(position.to ?? currentYear) - position.from} years</em></p></div>
+      <div class="dates"><p>{position.from}<br />–<br />{position.to ?? 'Present Time'}<br /><em>{duration} {duration === 1 ? 'year' : 'years'}</em></p></div>
       <div class="separator"><div class="dot"><ResponsiveImage src={position.image} alt={position.imageAlt} sizes="45px" /></div><div class="connector"></div></div>
       <div class="content">
         <h2>{position.institution}</h2>

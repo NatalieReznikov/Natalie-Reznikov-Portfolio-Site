@@ -16,6 +16,8 @@
 <style>
   .member-card { display: grid; grid-template-columns: 1fr 1.54fr; grid-template-areas: 'photo content' 'research research'; gap: 0.5em; align-items: start; }
   .photo { grid-area: photo; }
+  /* Keep the chosen face framing; short photos get bars instead of another crop. */
+  .photo :global(img) { aspect-ratio: 606 / 933; object-fit: contain; background: #222526; }
   .content { grid-area: content; font-size: clamp(14px, 1.5vw, 24px); }
   h2 { font-size: 1.7em; margin: 0 0 0.4em; text-align: left; }
   p { margin: 0; line-height: 1.5; }
