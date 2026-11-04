@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "swiper": "^14.2.0",
-    "zod": "^4.6.5"
+    "zod": "^4.6.6"
   },
   "overrides": {
     "sharp": "^0.35.4",
